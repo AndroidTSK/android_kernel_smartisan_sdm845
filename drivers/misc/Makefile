@@ -69,6 +69,7 @@ obj-$(CONFIG_VXR200_XR_MISC) += vxr7200.o
 
 ifdef CONFIG_VENDOR_SMARTISAN
 obj-y				+= haptic/
+obj-y				+= tusb544.o
 endif
 
 lkdtm-$(CONFIG_LKDTM)		+= lkdtm_core.o
