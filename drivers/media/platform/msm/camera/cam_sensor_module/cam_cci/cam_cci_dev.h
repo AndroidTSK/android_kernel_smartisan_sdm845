@@ -31,14 +31,14 @@
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-subdev.h>
-#include <cam_sensor_cmn_header.h>
-#include <cam_io_util.h>
-#include <cam_sensor_util.h>
-#include <cam_subdev.h>
-#include <cam_cpas_api.h>
+#include "../cam_sensor_utils/cam_sensor_cmn_header.h"
+#include "../../cam_utils/cam_io_util.h"
+#include "../../cam_sensor_module/cam_sensor_utils/cam_sensor_util.h"
+#include "../../cam_req_mgr/cam_subdev.h"
+#include "../../cam_cpas/include/cam_cpas_api.h"
 #include "cam_cci_hwreg.h"
-#include "cam_soc_util.h"
-#include "cam_debug_util.h"
+#include "../../cam_utils/cam_soc_util.h"
+#include "../../cam_utils/cam_debug_util.h"
 
 #define V4L2_IDENT_CCI 50005
 #define CCI_I2C_QUEUE_0_SIZE 128
